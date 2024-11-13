@@ -1,6 +1,6 @@
 /*****************************
-* 020 - Fonctions - Préalable
-*/
+ * 020 - Fonctions - Préalable
+ */
 
 // 7. Utiliser les fonctions prédéfinies en JavaScript
 
@@ -15,9 +15,9 @@ Utiliser la fonction Math.min pour afficher dans la console
 - le minimum de 1 et 1
 */
 
-console.log(Math.min(4.5, 5)); // 4.5
-console.log(Math.min(19, 9));  // 9
-console.log(Math.min(1, 1));   // 1
+console.log(Math.min(4.5, 5)); //4.5
+console.log(Math.min(19, 9)); // 9
+console.log(Math.min(1, 1)); // 1
 
 // La fonction Math.random() génère un nombre aléatoire entre 0 et 1
 
@@ -29,7 +29,10 @@ Utiliser la fonction Math.random pour afficher dans la console
 */
 
 console.log(Math.random()); // Un nombre aléatoire entre 0 et 1
+console.log(Math.random() * 10); // Un nombre aléatoire entre 0 et 10
+console.log(Math.random() * 10 + 5); // Un nombre aléatoire entre 5 et 15
 
+console.log(Math.floor(Math.random() * 10) + 1); //Car Math.floor arrrrondi en dessous, pour que le 15 soit inclus on rajoute 1
 // Nous découvrirons plein d'autres fonctions prédéfinies dans la suite de ce cours.
 
 // 2°) Consulter la documentation !!

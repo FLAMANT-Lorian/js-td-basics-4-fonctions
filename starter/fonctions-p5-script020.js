@@ -22,6 +22,8 @@ Utilisez la fonction calculateAge que vous venez de créer pour calculer
 
 // 2. Fonction avec deux paramètres et un return
 
+
+
 /*
 1. Déclarez la fonction giveYearsUntilRetirement prenant les paramètres
 	- year (pour l'année de naissance de la personne)
@@ -36,7 +38,25 @@ Utilisez la fonction calculateAge que vous venez de créer pour calculer
 	- Jane (née en 1969)
 */
 
+function calculateAge(birthYear){
+    return 2024 - birthYear;
+}
+
+// console.log(`Jhon à ${calculateAge(1990)} ans.`);
+// console.log(`Mike à ${calculateAge(1948)} ans.`);
+// console.log(`Jane à ${calculateAge(1969)} ans.`);
 
 
+function giveYearsUntilRetirement(year, firstname){
+   const retirement = 65 - calculateAge(year);
+   if (retirement > 0){
+       return `${firstname} prendra sa pension dans ${retirement} ans.`;
+   } else {
+       return `${firstname} est déjà pensionné(e).`;
+   }
+}
 
+console.log(giveYearsUntilRetirement(1990, 'Jhon'));
+console.log(giveYearsUntilRetirement(1948, 'Mike'));
+console.log(giveYearsUntilRetirement(1969, 'Jane'));
 

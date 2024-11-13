@@ -25,6 +25,22 @@ Une variable globale est accessible de partout
 // 3°) Appeler affiche2
 // 4°) Expliquer ce qui se passe
 
+
+/*
+function affiche1(){
+    const nbre1 = 2;
+}
+
+function  affiche2(){
+    const nbre2 = 3;
+    console.log(`Dans affiche2 : nbre2 = ${nbre2}`);
+    console.log(`Dans affiche2 : nbre1 = ${nbre1}`);
+}
+affiche2();
+// Il affiche nbre2 mais pour afficher nbre1, ça ne marche pas, ça nous affiche une erreur !
+*/
+
+
 // EXERCICE 2 : Variable globale
 // (on sort la variable nbre1 de la fonction affiche1)
 // 1°) Initialiser une variable nbre1 à la valeur 2
@@ -36,6 +52,25 @@ Une variable globale est accessible de partout
 //    - donne l'ordre d'afficher dans la console "Dans affiche2 : nbre1 =  "
 // 4°) Appeler affiche1 et affiche2
 // 5°) Expliquer ce qui se passe
+
+/*
+const nbre1 = 2;
+
+function affiche1(){
+    console.log(`Dans affiche1 : nbre1 = ${nbre1}`);
+}
+
+function affiche2() {
+    const nbre2 = 3;
+    console.log(`Dans affiche2 : nbre2 = ${nbre2}`);
+    console.log(`Dans affiche2 : nbre1 = ${nbre1}`);
+}
+
+affiche1()
+affiche2();
+*/
+
+//Vu que la variable est globale et en dehors de la première fonction, la deuxième sait aller récupérer la valeur de celle-ci;
 
 // EXERCICE 3 : Variable globale - variante
 // (on déclare la variable nbre1 hors de la fonction affiche1 et on l'affecte à l'intérieur de la fonction affiche1)
@@ -49,6 +84,24 @@ Une variable globale est accessible de partout
 //    - donne l'ordre d'afficher dans la console "Dans affiche2 : nbre1 =  "
 // 4°) Appeler affiche1 et affiche2
 // 5°) Expliquer ce qui se passe
+
+
+let nbre1;
+
+function affiche1(){
+    nbre1 = 2;
+    console.log(`Dans affiche1 : nbre1 = ${nbre1}`);
+}
+
+function affiche2(){
+    const nbre2 = 3;
+    console.log(`Dans affiche2 : nbre2 = ${nbre2}`);
+    console.log(`Dans affiche2 : nbre1 = ${nbre1}`);
+}
+
+affiche1();
+affiche2();
+// Nous avons déclarer une variable globale sans valeur mais en lui ajoutant un valeur de la première fonction, cela nous donne accès à la valeur pou la deuxième fonction
 
 /*
 RESUME :
